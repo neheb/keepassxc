@@ -585,7 +585,6 @@ struct TagsEdit::Impl
 TagsEdit::TagsEdit(QWidget* parent)
     : QAbstractScrollArea(parent)
     , impl(std::make_unique<Impl>(this))
-    , m_readOnly(false)
 {
     QSizePolicy size_policy(QSizePolicy::Ignored, QSizePolicy::Preferred);
     size_policy.setHeightForWidth(true);

@@ -30,9 +30,7 @@ public:
     {
     public:
         Result()
-            : m_isOk(false)
-            , m_canRetry(false)
-            , m_error(QString())
+            : m_error(QString())
         {
         }
 
@@ -67,8 +65,8 @@ public:
         }
 
     private:
-        bool m_isOk;
-        bool m_canRetry;
+        bool m_isOk{};
+        bool m_canRetry{};
         QString m_error;
 
         Result(bool isOk, bool canRetry, const QString& error)
