@@ -103,8 +103,6 @@ Command::Command()
     options.append(Command::QuietOption);
 }
 
-Command::~Command() = default;
-
 QString Command::getDescriptionLine()
 {
     QString response = name;

@@ -19,8 +19,6 @@
 
 #include "core/Global.h"
 
-SignalMultiplexer::SignalMultiplexer() = default;
-
 SignalMultiplexer::~SignalMultiplexer()
 {
     // disconnect all connections

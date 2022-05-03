@@ -86,7 +86,7 @@ namespace FdoSecrets
          */
         void populateMethodCache();
 
-        ~DBusMgr() override;
+        ~DBusMgr() override = default;
 
         QString introspect(const QString& path) const override;
         bool handleMessage(const QDBusMessage& message, const QDBusConnection& connection) override;

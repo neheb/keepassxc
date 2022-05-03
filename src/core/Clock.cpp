@@ -78,10 +78,6 @@ QDateTime Clock::parse(const QString& text, const QString& format)
     return QDateTime::fromString(text, format);
 }
 
-Clock::~Clock() = default;
-
-Clock::Clock() = default;
-
 QDateTime Clock::currentDateTimeUtcImpl() const
 {
     return QDateTime::currentDateTimeUtc();

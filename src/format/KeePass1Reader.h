@@ -32,7 +32,7 @@ class KeePass1Reader
     Q_DECLARE_TR_FUNCTIONS(KeePass1Reader)
 
 public:
-    KeePass1Reader();
+    KeePass1Reader() = default;
     QSharedPointer<Database> readDatabase(QIODevice* device, const QString& password, QIODevice* keyfileDevice);
     QSharedPointer<Database> readDatabase(QIODevice* device, const QString& password, const QString& keyfileName);
     QSharedPointer<Database> readDatabase(const QString& filename, const QString& password, const QString& keyfileName);

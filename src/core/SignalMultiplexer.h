@@ -23,7 +23,7 @@
 class SignalMultiplexer
 {
 public:
-    SignalMultiplexer();
+    SignalMultiplexer() = default;
     ~SignalMultiplexer();
     QObject* currentObject() const;
     void setCurrentObject(QObject* object);

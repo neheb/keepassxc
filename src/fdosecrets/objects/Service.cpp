@@ -58,8 +58,6 @@ namespace FdoSecrets
                 &Service::onDatabaseUnlockDialogFinished);
     }
 
-    Service::~Service() = default;
-
     bool Service::initialize()
     {
         if (!dbus()->registerObject(this)) {

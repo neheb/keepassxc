@@ -51,7 +51,7 @@ namespace FdoSecrets
          */
         static QSharedPointer<Service>
         Create(FdoSecretsPlugin* plugin, QPointer<DatabaseTabWidget> dbTabs, QSharedPointer<DBusMgr> dbus);
-        ~Service() override;
+        ~Service() override = default;
 
         Q_INVOKABLE DBusResult openSession(const DBusClientPtr& client,
                                            const QString& algorithm,

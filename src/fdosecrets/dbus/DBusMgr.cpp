@@ -224,8 +224,6 @@ namespace FdoSecrets
         populateMethodCache(Session::staticMetaObject);
     }
 
-    DBusMgr::~DBusMgr() = default;
-
     void DBusMgr::overrideClient(const DBusClientPtr& fake)
     {
         m_overrideClient = fake;

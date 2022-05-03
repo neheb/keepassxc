@@ -37,7 +37,7 @@ class Command
 {
 public:
     Command();
-    virtual ~Command();
+    virtual ~Command() = default;
     virtual int execute(const QStringList& arguments) = 0;
     QString name;
     QString description;

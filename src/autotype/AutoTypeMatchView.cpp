@@ -26,9 +26,8 @@
 
 class CustomSortFilterProxyModel : public QSortFilterProxyModel
 {
+    using QSortFilterProxyModel::QSortFilterProxyModel;
 public:
-    explicit CustomSortFilterProxyModel(QObject* parent = nullptr)
-        : QSortFilterProxyModel(parent){};
     ~CustomSortFilterProxyModel() override = default;
 
     // Only search the first three columns (ie, ignore sequence column)

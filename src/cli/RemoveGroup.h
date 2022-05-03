@@ -24,7 +24,7 @@ class RemoveGroup : public DatabaseCommand
 {
 public:
     RemoveGroup();
-    ~RemoveGroup() override;
+    ~RemoveGroup() override = default;
 
     int executeWithDatabase(QSharedPointer<Database> db, QSharedPointer<QCommandLineParser> parser) override;
 };

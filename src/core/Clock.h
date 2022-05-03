@@ -41,10 +41,10 @@ public:
     static QDateTime parse(const QString& text, Qt::DateFormat format = Qt::TextDate);
     static QDateTime parse(const QString& text, const QString& format);
 
-    virtual ~Clock();
+    virtual ~Clock() = default;
 
 protected:
-    Clock();
+    Clock() = default;
     virtual QDateTime currentDateTimeUtcImpl() const;
     virtual QDateTime currentDateTimeImpl() const;
 

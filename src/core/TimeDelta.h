@@ -33,7 +33,7 @@ public:
     static TimeDelta fromMonths(int months);
     static TimeDelta fromYears(int years);
 
-    TimeDelta();
+    TimeDelta() = default;
     TimeDelta(int hours, int days, int months, int years);
 
     int getHours() const;
