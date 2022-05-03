@@ -129,7 +129,7 @@ SymmetricCipher::Mode SymmetricCipher::mode()
 bool SymmetricCipher::aesKdf(const QByteArray& key, int rounds, QByteArray& data)
 {
     try {
-        std::unique_ptr<Botan::BlockCipher> cipher(Botan::BlockCipher::create("AES-256"));
+        auto cipher = Botan::BlockCipher::create("AES-256");
         cipher->set_key(reinterpret_cast<const uint8_t*>(key.data()), key.size());
 
         Botan::secure_vector<uint8_t> out(data.begin(), data.end());
