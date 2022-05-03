@@ -690,12 +690,14 @@ MainWindow::MainWindow()
     restoreConfigState();
 }
 
+#ifdef WITH_XC_SSHAGENT
 MainWindow::~MainWindow()
 {
-#ifdef WITH_XC_SSHAGENT
     sshAgent()->removeAllIdentities();
-#endif
 }
+#else
+MainWindow::~MainWindow() = default;
+#endif
 
 /**
  * Restore the main window's state after launch
