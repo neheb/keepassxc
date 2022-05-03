@@ -70,7 +70,7 @@ public:
         Raise = 1,
     };
 
-    typedef uint64_t Buttons;
+    using Buttons = uint64_t;
 
     static void initializeButtonDefs();
     static void setNextAnswer(Button button);

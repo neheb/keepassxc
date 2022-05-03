@@ -56,7 +56,7 @@ enum class AuthDecision
 
 template <typename T> struct AddConst
 {
-    typedef const T Type;
+    using Type = const T;
 };
 
 // this adds const to non-const objects (like std::as_const)

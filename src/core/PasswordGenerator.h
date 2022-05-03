@@ -22,7 +22,7 @@
 #include <QObject>
 #include <QVector>
 
-typedef QVector<QChar> PasswordGroup;
+using PasswordGroup = QVector<QChar>;
 
 class PasswordGenerator
 {

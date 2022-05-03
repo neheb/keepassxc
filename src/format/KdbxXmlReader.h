@@ -55,7 +55,7 @@ public:
     void setStrictMode(bool strictMode);
 
 protected:
-    typedef QPair<QString, QString> StringPair;
+    using StringPair = QPair<QString, QString>;
 
     virtual bool parseKeePassFile();
     virtual void parseMeta();

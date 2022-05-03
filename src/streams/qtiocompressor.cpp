@@ -47,8 +47,8 @@
 #include "qtiocompressor.h"
 #include <zlib.h>
 
-typedef Bytef ZlibByte;
-typedef uInt ZlibSize;
+using ZlibByte = Bytef;
+using ZlibSize = uInt;
 
 class QtIOCompressorPrivate {
     QtIOCompressor *q_ptr;

@@ -34,8 +34,8 @@ public:
     QStringList merge();
 
 private:
-    typedef QString Change;
-    typedef QStringList ChangeList;
+    using Change = QString;
+    using ChangeList = QStringList;
 
     struct MergeContext
     {

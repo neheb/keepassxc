@@ -22,6 +22,6 @@
 #include <QPointer>
 
 class Entry;
-typedef QPair<QPointer<Entry>, QString> AutoTypeMatch;
+using AutoTypeMatch = QPair<QPointer<Entry>, QString>;
 
 #endif // KPXC_AUTOTYPEMATCH_H

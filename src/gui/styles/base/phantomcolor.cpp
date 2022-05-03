@@ -71,7 +71,7 @@ namespace Phantom
         // conversions -- you will need to make similar modifications to the upstream
         // hsluv-c code. Also note that that the hpluv (pastel) functions have been
         // removed, as they are not used in Phantom.
-        typedef struct Triplet_tag Triplet;
+        using Triplet = struct Triplet_tag;
         struct Triplet_tag
         {
             double a;
@@ -95,7 +95,7 @@ namespace Phantom
         const double kappa = 903.29629629629629629630;
         const double epsilon = 0.00885645167903563082;
 
-        typedef struct Bounds_tag Bounds;
+        using Bounds = struct Bounds_tag;
         struct Bounds_tag
         {
             double a;

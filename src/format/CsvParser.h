@@ -24,8 +24,8 @@
 
 class QFile;
 
-typedef QStringList CsvRow;
-typedef QList<CsvRow> CsvTable;
+using CsvRow = QStringList;
+using CsvTable = QList<CsvRow>;
 
 class CsvParser
 {

@@ -69,7 +69,7 @@ namespace AsyncTask
     template <typename FunctionObject, typename FunctionObject2>
     void runThenCallback(FunctionObject task, QObject* context, FunctionObject2 callback)
     {
-        typedef QFutureWatcher<typename std::result_of<FunctionObject()>::type> FutureWatcher;
+        using FutureWatcher = QFutureWatcher<typename std::result_of<FunctionObject ()>::type>;
         auto future = QtConcurrent::run(task);
         auto watcher = new FutureWatcher(context);
         QObject::connect(watcher, &QFutureWatcherBase::finished, context, [=]() {
